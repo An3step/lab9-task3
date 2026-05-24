@@ -16,6 +16,18 @@ jobs:
         run: echo "Installing Qt for Windows..."
       - name: Build
         run: echo "Building for Windows..."
+      - name: Unit Tests
+        run: |
+          echo "Running unit tests..."
+          powershell -Command "Start-Sleep -Seconds 180"
+      - name: Integration Tests
+        run: |
+          echo "Running integration tests..."
+          powershell -Command "Start-Sleep -Seconds 180"
+      - name: UI Tests
+        run: |
+          echo "Running UI tests..."
+          powershell -Command "Start-Sleep -Seconds 180"
 
   # 2. Сборка для Android
   build-android:
@@ -26,6 +38,18 @@ jobs:
         run: echo "Installing Qt for Android..."
       - name: Build Android APK
         run: echo "Building APK for Android..."
+      - name: Unit Tests
+        run: |
+          echo "Running unit tests..."
+          sleep 180
+      - name: Integration Tests
+        run: |
+          echo "Running integration tests..."
+          sleep 180
+      - name: UI Tests
+        run: |
+          echo "Running UI tests..."
+          sleep 180
 
   # 3. Сборка для iOS
   build-ios:
@@ -36,6 +60,18 @@ jobs:
         run: echo "Installing Qt for iOS..."
       - name: Build iOS
         run: echo "Building for iOS..."
+      - name: Unit Tests
+        run: |
+          echo "Running unit tests..."
+          sleep 180
+      - name: Integration Tests
+        run: |
+          echo "Running integration tests..."
+          sleep 180
+      - name: UI Tests
+        run: |
+          echo "Running UI tests..."
+          sleep 180
 
   # 4. Сборка для Web (WebAssembly)
   build-web:
@@ -48,3 +84,15 @@ jobs:
         run: echo "Installing Qt for WebAssembly..."
       - name: Build WebAssembly
         run: echo "Building for WebAssembly..."
+      - name: Unit Tests
+        run: |
+          echo "Running unit tests..."
+          sleep 180
+      - name: Integration Tests
+        run: |
+          echo "Running integration tests..."
+          sleep 180
+      - name: UI Tests
+        run: |
+          echo "Running UI tests..."
+          sleep 180
