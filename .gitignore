@@ -1,0 +1,91 @@
+# C++ and Build artifacts
+build*/
+bin/
+out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.wasm
+
+Task4/
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Qt specific
+*.user
+*.user.settings
+*.qm
+.qtcreator/
+*.autosave
+*.qmlc
+*.jsc
+asccode.bin
+
+# Android specific
+.gradle/
+local.properties
+captures/
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+*.aar
+*.jks
+*.keystore
+
+# iOS specific
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcbkptlist
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+DerivedData/
+build/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcdataold
+*.launch
+*.xccheckout
+*.moved-aside
+*.pin
+*.xcuserstate
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Project specific
+mediaplayer.db
+Task4/build/
+i18n/*.qm
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
