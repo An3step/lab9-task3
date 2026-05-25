@@ -28,6 +28,12 @@ jobs:
         run: |
           echo "Running UI tests..."
           powershell -Command "Start-Sleep -Seconds 180"
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: build/windows/
+          retention-days: 7
 
   # 2. Сборка для Android
   build-android:
@@ -50,6 +56,12 @@ jobs:
         run: |
           echo "Running UI tests..."
           sleep 180
+      - name: Upload Android artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build
+          path: build/android/
+          retention-days: 7
 
   # 3. Сборка для iOS
   build-ios:
@@ -72,6 +84,12 @@ jobs:
         run: |
           echo "Running UI tests..."
           sleep 180
+      - name: Upload iOS artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: build/ios/
+          retention-days: 7
 
   # 4. Сборка для Web (WebAssembly)
   build-web:
@@ -96,3 +114,9 @@ jobs:
         run: |
           echo "Running UI tests..."
           sleep 180
+      - name: Upload WebAssembly artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wasm-build
+          path: build/wasm/
+          retention-days: 7
